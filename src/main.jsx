@@ -4,7 +4,6 @@ import { StrictMode } from "react";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
 import App from "./App";
-import Introduction from "./Introduction";
 import Survey from "./Survey";
 import Instructions from "./Instructions";
 import Highlight from "./Highlight";
@@ -21,7 +20,6 @@ createRoot(document.getElementById("root")).render(
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<App />} />
-          <Route path="introduction" element={<Introduction />} />
           <Route path="survey" element={<Survey />} />
           <Route path="gallery" element={<Gallery />} />
           <Route path="inventory" element={<Inventory />} />
