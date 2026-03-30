@@ -12,6 +12,7 @@ import WebsiteEvaluations from "./WebsiteEvaluations";
 import IntroForm from "./IntroForm";
 import Contract from "./Contract";
 import Inventory from "./Inventory";
+import Gallery from "./Gallery"
 
 
 
@@ -19,7 +20,8 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <HashRouter>
       <Routes>
-        <Route path="/" element={<Layout />}>
+          <Route index element={<App />} />
+          <Route path="/" element={<Layout />}>
           <Route path="introduction" element={<Introduction />} />
           <Route path="survey" element={<Survey />} />
           <Route path="gallery" element={<Gallery />} />
