@@ -11,6 +11,7 @@ import Highlight from "./Highlight";
 import WebsiteEvaluations from "./WebsiteEvaluations";
 import IntroForm from "./IntroForm";
 import Contract from "./Contract";
+import Inventory from "./Inventory";
 
 
 
@@ -28,6 +29,7 @@ createRoot(document.getElementById("root")).render(
           <Route path="website-evaluations" element={<WebsiteEvaluations />} />
           <Route path="intro-form" element={<IntroForm />} />
           <Route path="contract" element={<Contract />} />
+      
         </Route>
       </Routes>
     </HashRouter>
