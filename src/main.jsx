@@ -12,16 +12,15 @@ import WebsiteEvaluations from "./WebsiteEvaluations";
 import IntroForm from "./IntroForm";
 import Contract from "./Contract";
 import Inventory from "./Inventory";
-import Gallery from "./Gallery"
-
-
+import Gallery from "./Gallery";
+import './App.css';
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <HashRouter>
       <Routes>
+        <Route path="/" element={<Layout />}>
           <Route index element={<App />} />
-          <Route path="/" element={<Layout />}>
           <Route path="introduction" element={<Introduction />} />
           <Route path="survey" element={<Survey />} />
           <Route path="gallery" element={<Gallery />} />
@@ -31,7 +30,6 @@ createRoot(document.getElementById("root")).render(
           <Route path="website-evaluations" element={<WebsiteEvaluations />} />
           <Route path="intro-form" element={<IntroForm />} />
           <Route path="contract" element={<Contract />} />
-      
         </Route>
       </Routes>
     </HashRouter>
