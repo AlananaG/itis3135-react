@@ -5,6 +5,13 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
 import App from "./App";
 import Introduction from "./Introduction";
+import Survey from "./Survey";
+import Instructions from "./Instructions";
+import Highlight from "./Highlight";
+import WebsiteEvaluations from "./WebsiteEvaluations";
+import IntroForm from "./IntroForm";
+import Contract from "./Contract";
+
 
 
 createRoot(document.getElementById("root")).render(
@@ -21,9 +28,6 @@ createRoot(document.getElementById("root")).render(
           <Route path="website-evaluations" element={<WebsiteEvaluations />} />
           <Route path="intro-form" element={<IntroForm />} />
           <Route path="contract" element={<Contract />} />
-          <Route path="crappy-page" element={<CrappyPage />} />
-          <Route path="hobby" element={<Hobby />} />
-          <Route path="firm" element={<Firm />} />
         </Route>
       </Routes>
     </HashRouter>

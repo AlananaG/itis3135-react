@@ -16,9 +16,7 @@ export default function Header() {
             <nav className="secondary">
                 <Link to="/">Home Page</Link> | 
                 <Link to="/introduction">About Me</Link> |
-                <Link to="/contract">Contract Page</Link> |
-                <Link to="/crappy-page">Crappy Page</Link> |
-                <Link to="/hobby">My Hobby Page</Link>
+                <Link to="/contract">Contract Page</Link> 
             </nav>
         </header>
     );
