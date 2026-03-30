@@ -1,25 +1,31 @@
 import React from "react";
 import { createRoot } from "react-dom/client";
+import { StrictMode } from "react";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Layout";
 import App from "./App";
 import Introduction from "./Introduction";
-// import other pages
-// import Survey from "./Survey";
-// import Gallery from "./Gallery";
-// etc.
+
 
 createRoot(document.getElementById("root")).render(
-    <React.StrictMode>
-        <HashRouter>
-            <Routes>
-                <Route path="/" element={<Layout />}>
-                    <Route index element={<App />} />
-                    <Route path="introduction" element={<Introduction />} />
-                    {/* Add routes for your other pages here */}
-                    {/* <Route path="survey" element={<Survey />} /> */}
-                </Route>
-            </Routes>
-        </HashRouter>
-    </React.StrictMode>
+  <StrictMode>
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route path="introduction" element={<Introduction />} />
+          <Route path="survey" element={<Survey />} />
+          <Route path="gallery" element={<Gallery />} />
+          <Route path="inventory" element={<Inventory />} />
+          <Route path="instructions" element={<Instructions />} />
+          <Route path="highlight" element={<Highlight />} />
+          <Route path="website-evaluations" element={<WebsiteEvaluations />} />
+          <Route path="intro-form" element={<IntroForm />} />
+          <Route path="contract" element={<Contract />} />
+          <Route path="crappy-page" element={<CrappyPage />} />
+          <Route path="hobby" element={<Hobby />} />
+          <Route path="firm" element={<Firm />} />
+        </Route>
+      </Routes>
+    </HashRouter>
+  </StrictMode>
 );
