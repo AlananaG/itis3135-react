@@ -12,7 +12,7 @@ import WebsiteEvaluations from "./WebsiteEvaluations";
 import IntroForm from "./IntroForm";
 import Contract from "./Contract";
 import Inventory from "./Inventory";
-import Gallery from "./Gallery"
+import Gallery from "./GalleryTemp"
 
 
 
