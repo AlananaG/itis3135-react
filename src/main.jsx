@@ -12,7 +12,6 @@ import IntroForm from "./IntroForm";
 import Contract from "./Contract";
 import Inventory from "./Inventory";
 import Gallery from "./Gallery";
-import './App.css';
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
